@@ -26,6 +26,7 @@ async function searchWeather(query){
     catch(err){
         console.log(err);
         alert(`City ​​not recognized, please enter a valid city`);
+        displayCard.style.display = `none`;
         document.getElementById(`city`).value = '';
         document.getElementById(`city`).focus();
 
