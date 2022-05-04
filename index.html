@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Waether App</title>
+</head>
+<body>
+     <div class="container p-4">
+        <div class="row p-4">
+            <div class="col-md-4 mx-auto text-center">
+                <div class="card">
+                    <div class="none" id="displayCard">
+                    <div class="card-body">
+                        <img src="img/planeta-removebg-preview.svg" alt="">
+                        <h1 id="weatherLocation" class="h3"></h1>
+                        <h3 id="weatherDescription" class="h4"></h3>
+                        <h3 id="weatherRange" class="h4"></h3>
+                        <ul class="list-group mt-3">
+                            <li id="weatherHumidity" class="list-group-item"></li>
+                            <li id=weatherWind class="list-group-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="card">
+                         <div class="card-body">
+                             <form id="w-form">
+                                 <div class="form-group">
+                                     <input type="text" id="city" class="form-control" placeholder="City" required>
+                                 </div>
+                                <br>
+                                <div class="form-group">
+                                   <button class="btn btn-dark btn-block" id="w-change-btn">
+                                        Changes City
+                                   </button>
+                                </div>
+                             </form>
+                         </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    background: #1F1C2C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.none{
+    display: none;
+}
+
+.card-body > img{
+    height:15vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-body > img{
+    transition: all 2s infinite linear;
+}
+/*/*
+@keyframes img {
+    img {
+        transform: rotate(0deg);
+      }
+      img {
+        transform: rotate(359deg);
+      }
+}*/
+
+.card-body > img:hover{
+    
+    transform: rotate(90deg);
+}
+
+#weatherLocation{
+    color: rgb(231, 62, 62);
+}
+
+#weatherDescription{
+    color: rgb(231, 62, 62);
+}
+
+
+
