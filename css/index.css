@@ -11,25 +11,16 @@ body{
 
 .card-body > img{
     height:15vh;
-    transition: all 0.5s ease-in-out;
+    animation: animate 8s linear infinite;
 }
 
-.card-body > img{
-    transition: all 2s infinite linear;
-}
-/*/*
-@keyframes img {
-    img {
-        transform: rotate(0deg);
+@keyframes animate {
+    0% {
+        transform: rotateX(0deg);
       }
-      img {
-        transform: rotate(359deg);
+      100% {
+        transform: rotateX(360deg);
       }
-}*/
-
-.card-body > img:hover{
-    
-    transform: rotate(90deg);
 }
 
 #weatherLocation{
